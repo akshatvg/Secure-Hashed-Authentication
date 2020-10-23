@@ -1,32 +1,36 @@
-# Repo Name
+# Secure Hashed Authentication
 
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/Secure-Hashed-Authentication?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/Secure-Hashed-Authentication?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/Secure-Hashed-Authentication?style=social)](https://github.com/akshatvg/Secure-Hashed-Authentication/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/Secure-Hashed-Authentication?style=social&logo=git)](https://github.com/akshatvg/Secure-Hashed-Authentication/network)
 
-Project description comes here.
+blake2b & md5 based registration and login in PHP to show a secure hashed password.
 
 <p align="center">
-<a href="#!">
-<img src="https://github.com/akshatvg/Secure-Hashed-Authentication/blob/master/Assets/app-icon-64%402x.png" width="120px" height="120px" alt="Secure-Hashed-Authentication Logo"/>
-</a>
+<img src="https://coinguides.org/wp-content/uploads/2018/08/blake-2b.jpg" height="120px" alt="blake2b"/>
+<img src="https://websalutem.com/wp-content/uploads/md5_checksum.jpg" height="120px" alt="md5"/>
 </p>
 
-![Generic badge](https://img.shields.io/badge/Random-Swag-orange) 
+![Generic badge](https://img.shields.io/badge/Secure_Hashed-Authentication-orange) 
 
-#### Link for [demo](#!) 
-[![Generic badge](https://img.shields.io/badge/view-demo-orange)](#!)
+## How it works
+- The project uses both blake2b and md5 to hash the password so it can't be unencrypted or stolen or intercepted.
+- We first remove backslashes to ensure no XSS Attack can take place.
+- We then escape special characters in a string to ensure SQL Injection and XSS Attacks aren't possible. This doesn't affect the password's strength as the user enters the same password to login as while signing up. He/she won't even know this procedure took place.
+- The password is hashed with the blake2b hashing algorithm.
+- The password is then hashed with the md5 hashing algorithm.
+- The same procedure is repeated for both login and registration to ensure the final hashed value is the same and hence login doesn't fail.
 
 ## Useful Links
 
-- [Actual Website](#!)
+- [deemru's blake2b implementation in PHP](https://github.com/deemru/Blake2b)
 
 ## Requirements
 
-[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/Secure-Hashed-Authentication?logo=javascript&style=social)](https://github.com/akshatvg/)
+[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/Secure-Hashed-Authentication?logo=php&style=social)](https://github.com/akshatvg/)
 
-The source code of this project is written in **`HTML/CSS/JS`**. So, you do not require anything extra to run this project.
+The source code of this project is written in **`PHP`**. You will need to install composer to run this project.
 
 ## Instructions
-1. 
+1. Enter the following commands in terminal or the command prompt:
 ```bash
 $ git clone https://github.com/akshatvg/Secure-Hashed-Authentication
 $ cd Secure-Hashed-Authentication
