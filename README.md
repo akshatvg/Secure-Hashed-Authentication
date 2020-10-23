@@ -36,7 +36,7 @@ $ git clone https://github.com/akshatvg/Secure-Hashed-Authentication
 $ cd Secure-Hashed-Authentication
 $ composer install
 ```
-2. Import database.sql into any database and then enter these details in `db.php`.
+2. Import `database.sql` into any database and then enter these details in `db.php`.
 3. Register and then login.
 
 
