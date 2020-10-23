@@ -1,0 +1,5 @@
+{
+    "require": {
+        "deemru/blake2b": "1.0.*"
+    }
+}

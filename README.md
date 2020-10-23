@@ -1,12 +1,12 @@
 # Repo Name
 
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/<Repo>?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/<Repo>?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/<Repo>?style=social)](https://github.com/akshatvg/<Repo>/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/<Repo>?style=social&logo=git)](https://github.com/akshatvg/<Repo>/network)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/Secure-Hashed-Authentication?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/Secure-Hashed-Authentication?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/Secure-Hashed-Authentication?style=social)](https://github.com/akshatvg/Secure-Hashed-Authentication/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/Secure-Hashed-Authentication?style=social&logo=git)](https://github.com/akshatvg/Secure-Hashed-Authentication/network)
 
 Project description comes here.
 
 <p align="center">
 <a href="#!">
-<img src="https://github.com/akshatvg/<Repo>/blob/master/Assets/app-icon-64%402x.png" width="120px" height="120px" alt="<Repo> Logo"/>
+<img src="https://github.com/akshatvg/Secure-Hashed-Authentication/blob/master/Assets/app-icon-64%402x.png" width="120px" height="120px" alt="Secure-Hashed-Authentication Logo"/>
 </a>
 </p>
 
@@ -21,15 +21,19 @@ Project description comes here.
 
 ## Requirements
 
-[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/<Repo>?logo=javascript&style=social)](https://github.com/akshatvg/)
+[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/Secure-Hashed-Authentication?logo=javascript&style=social)](https://github.com/akshatvg/)
 
 The source code of this project is written in **`HTML/CSS/JS`**. So, you do not require anything extra to run this project.
 
 ## Instructions
-
-[![chrome](https://img.shields.io/badge/Open-index.html-lightgrey.svg?logo=google-chrome&style=popout&logoColor=red)](#!)
-
-Extract the folder and run `index.html`
+1. 
+```bash
+$ git clone https://github.com/akshatvg/Secure-Hashed-Authentication
+$ cd Secure-Hashed-Authentication
+$ composer install
+```
+2. Import database.sql into any database and then enter these details in `db.php`.
+3. Register and then login.
 
 
 ## Need help?
@@ -78,9 +82,9 @@ ______      _               _   _               _
 
 ## License
 
-**MIT &copy; [Akshat Gupta](https://github.com/akshatvg/<Repo>/blob/master/LICENSE)**
+**MIT &copy; [Akshat Gupta](https://github.com/akshatvg/Secure-Hashed-Authentication/blob/master/LICENSE)**
 
-[![GitHub license](https://img.shields.io/github/license/akshatvg/<Repo>?style=social&logo=github)](https://github.com/akshatvg/<Repo>/blob/master/LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/akshatvg?style=social)](https://twitter.com/akshatvg)
+[![GitHub license](https://img.shields.io/github/license/akshatvg/Secure-Hashed-Authentication?style=social&logo=github)](https://github.com/akshatvg/Secure-Hashed-Authentication/blob/master/LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/akshatvg?style=social)](https://twitter.com/akshatvg)
 
 ---------
 

@@ -1,0 +1,48 @@
+[
+    {
+        "name": "deemru/blake2b",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/deemru/Blake2b.git",
+            "reference": "d7bd270d820fcad53b9a30a620075f4039cd6967"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/deemru/Blake2b/zipball/d7bd270d820fcad53b9a30a620075f4039cd6967",
+            "reference": "d7bd270d820fcad53b9a30a620075f4039cd6967",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2019-02-03T14:36:24+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "deemru\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dmitrii Pichulin",
+                "email": "deem@deem.ru"
+            }
+        ],
+        "description": "BLAKE2 hash function on pure PHP",
+        "homepage": "https://github.com/deemru/Blake2b",
+        "keywords": [
+            "BLAKE2",
+            "BLAKE2b",
+            "blake2b256",
+            "hash",
+            "wavesplatform"
+        ]
+    }
+]
