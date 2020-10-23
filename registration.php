@@ -11,6 +11,10 @@
 
 <body>
         <?php
+        require './vendor/autoload.php';
+
+        use deemru\Blake2b;
+
         require('db.php');
         // If form submitted, insert values into the database.
         if (isset($_REQUEST['username'])) {
@@ -23,8 +27,10 @@
                 $password = stripslashes($_REQUEST['password']);
                 $password = mysqli_real_escape_string($con, $password);
                 $trn_date = date("Y-m-d H:i:s");
+                $blake2b = new Blake2b();
+                $hash = $blake2b->hash($password);
                 $query = "INSERT into `users` (username, password, email, trn_date)
-VALUES ('$username', '" . md5($password) . "', '$email', '$trn_date')";
+VALUES ('$username', '" . md5($hash) . "', '$email', '$trn_date')";
                 $result = mysqli_query($con, $query);
                 if ($result) {
                         echo "<div class='form'>

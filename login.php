@@ -11,6 +11,10 @@
 
 <body>
 	<?php
+	require './vendor/autoload.php';
+
+	use deemru\Blake2b;
+
 	require('db.php');
 	session_start();
 	// If form submitted, insert values into the database.
@@ -21,9 +25,11 @@
 		$username = mysqli_real_escape_string($con, $username);
 		$password = stripslashes($_REQUEST['password']);
 		$password = mysqli_real_escape_string($con, $password);
+		$blake2b = new Blake2b();
+		$hash = $blake2b->hash($password);
 		//Checking is user existing in the database or not
 		$query = "SELECT * FROM `users` WHERE username='$username'
-and password='" . md5($password) . "'";
+and password='" . md5($hash) . "'";
 		$result = mysqli_query($con, $query) or die(mysql_error());
 		$rows = mysqli_num_rows($result);
 		if ($rows == 1) {
