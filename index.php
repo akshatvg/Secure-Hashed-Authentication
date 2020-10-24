@@ -25,7 +25,7 @@ if (!isset($_SESSION["username"])) {
     <div class="container">
         <div class="mt-5 white-box text-center">
             <h1 class="text-center">You have logged in successfully!</h1>
-            <a href="logout.php"><button type="button" class="btn btn-security mt-3">Logout</button></a>
+            <a href="logout"><button type="button" class="btn btn-security mt-3">Logout</button></a>
         </div>
     </div>
 

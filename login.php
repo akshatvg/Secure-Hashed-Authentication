@@ -38,13 +38,13 @@ and password='" . md5($hash) . "'";
 		if ($rows == 1) {
 			$_SESSION['username'] = $username;
 			// Redirect user to index.php
-			header("Location: index.php");
+			header("Location: index");
 		} else {
 			echo "
 			<div class='container'>
                         <div class='mt-5 white-box text-center'>
                             <h1 class='text-center'>The username/password you entered is incorrect or doesn't exist in our database.</h1>
-                            <p class='mt-3'>Try logging in again. <a href='login.php'>Login</a>.</p>
+                            <p class='mt-3'>Try logging in again. <a href='login'>Login</a>.</p>
                         </div>
                     </div>";
 		}
@@ -57,7 +57,7 @@ and password='" . md5($hash) . "'";
 					<input type="text" name="username" placeholder="Username" required class="form-control mt-5" />
 					<input type="password" name="password" placeholder="Password" required class="form-control mt-3" />
 					<input name="submit" type="submit" value="Login" class="btn btn-security mt-5" />
-					<p class="mt-5">Not registered yet? <a href='registration.php'>Register Here</a>.</p>
+					<p class="mt-5">Not registered yet? <a href='registration'>Register Here</a>.</p>
 				</form>
 			</div>
 		</div>
