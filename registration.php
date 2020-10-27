@@ -38,7 +38,7 @@ VALUES ('$username', '" . md5($hash) . "', '$email', '$trn_date')";
                 if ($result) {
                         echo "<div class='container'>
                         <div class='mt-5 white-box text-center'>
-                            <h1 class='text-center'>You have been registered successfully!</h1>
+                            <h1 class='text-center'>A new login has been created for you $username.</h1>
                             <p class='mt-3'>Time to proceed! <a href='login'>Login Here</a>.</p>
                         </div>
                     </div>";
